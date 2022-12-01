@@ -10,8 +10,10 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       
       t.string :plan
       t.string :stripe_customer_id
+      t.string :stripe_product_id
+      t.string :stripe_price_id
       t.string :session_token, :string
-      t.index :stripe_customer_id, unique: true
+
       
   
       ## Recoverable
